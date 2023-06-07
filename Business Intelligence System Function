@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class BFPTaskManager {
+    public static void main(String[] args) {
+        //Enables user input.
+        Scanner sc_208 = new Scanner(System.in);
+        //Initializing variables.
+        int i = 1;
+        int tkID = 100;
+        
+        while(i == 1){
+            //Increments tkID (Task ID) by 1.
+            tkID ++;
+            //User is prompted with question and inputs an answer.
+            System.out.println("To whom is this task assigned to?");
+            String TaskAssign_208 = sc_208.nextLine();
+            System.out.println("\nDescribe the task:");
+            String TaskDesc_208 = sc_208.nextLine();
+
+            //Displays the information.
+            System.out.println("\nTask ID: TK" + tkID + "\nAssigned to: " + TaskAssign_208 + "\nTask description: " + TaskDesc_208);
+
+            //User can quit the program or add another task.
+            System.out.println("\nAssign another task? Input '1' if YES and '0' if NO.");
+            i = sc_208.nextInt();
+            
+            //Loop statement that validates user until input.
+            while(i != 1 && i != 0){
+                System.out.println("Invalid input. Please try again.");
+                i = sc_208.nextInt();
+            }
+            //Conditional statement that exits program if user inputs 1 or 0.
+            if(i == 1){
+                System.out.println("\nEnter the following details: \n" );
+            }
+            else if(i == 0){
+                System.exit(0);
+            }
+        } 
+    }
+}
