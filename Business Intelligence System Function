@@ -16,6 +16,8 @@ public class BFPTaskManager {
             String TaskAssign_208 = sc_208.nextLine();
             System.out.println("\nDescribe the task:");
             String TaskDesc_208 = sc_208.nextLine();
+            System.out.println("\nDue Date:");
+            String TaskDate_208 = sc_208.nextLine();
 
             //Displays the information.
             System.out.println("\nTask ID: TK" + tkID + "\nAssigned to: " + TaskAssign_208 + "\nTask description: " + TaskDesc_208);
